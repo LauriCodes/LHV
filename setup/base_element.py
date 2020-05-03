@@ -42,14 +42,6 @@ class BaseElement(object):
         Select(self.web_element).select_by_index(index)
         return None
 
-    def scroll(self):
-        self.web_element.send_keys(Keys.PAGE_DOWN)
-        return None
-
-    def default_content(self):
-        self.driver.switch_to.default_content()
-        return None
-
     @property
     def text(self):
         text = self.web_element.text
